@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Name"
+        tools:text="Sensor Name"
+        android:id="@+id/sensor_name"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Sensor Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensor_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/sensor_type"
+        tools:text="Sensor Type"
+        android:textSize="24sp"
+        android:textStyle="normal|italic"
+        android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:text="Share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sensor_type"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:id="@+id/sensor_listen"
+                tools:text="Share"
+                android:hapticFeedbackEnabled="true"
+                android:layout_gravity="right" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensor_listen"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Value0">
+
+        <TextView
+            android:text="x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueName0"
+            tools:text="x"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Value Val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueVal0"
+            tools:text="Value Val"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Value0"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Value1">
+
+        <TextView
+            android:text="y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueName1"
+            tools:text="y"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Value Val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueVal1"
+            tools:text="Value Val"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Value1"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Value2">
+
+        <TextView
+            android:text="z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueName2"
+            tools:text="z"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Value Val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueVal2"
+            tools:text="Value Val"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Value2"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Value3">
+
+        <TextView
+            android:text="w"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueName3"
+            tools:text="w"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="Value Val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValueVal3"
+            tools:text="Value Val"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

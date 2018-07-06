@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UPC - AppSensores</string>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Cerrar Menu</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
